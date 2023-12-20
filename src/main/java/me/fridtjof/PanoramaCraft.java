@@ -32,7 +32,7 @@ public class PanoramaCraft implements ModInitializer {
 
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
 			while (panoramaKeyBinding.wasPressed()) {
-				client.takePanorama(GAME_DIR, 4096, 4096);
+				client.takePanorama(GAME_DIR, 1024, 1024);
 
 
 				Text panoramaTakenText = Text.literal(PANORAMA_NAMES).formatted(Formatting.UNDERLINE).styled((style) -> {
